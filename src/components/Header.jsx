@@ -7,11 +7,9 @@ import logo from '../assets/LOGO.color.svg'
 //CSS
 import '../styles/style.css';
 
-function Header() {
-    //state (état, données)
 
-    //comportement
 
+export default function Header() {
     //affichage (render)
     return (
         <header className='header'>
@@ -24,5 +22,3 @@ function Header() {
         </header>
     )
 }
-
-export default Header

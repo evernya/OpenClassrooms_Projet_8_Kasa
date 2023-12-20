@@ -1,23 +1,12 @@
-//IMPORT
-
-
-//PAGES
-
-//LAYOUTS
-
-//COMPONENTS
-
 //ASSETS
 import logo from '../assets/LOGO.white.svg'
 
 //CSS
 import '../styles/style.css';
 
-function Footer() {
-    //state (état, données)
 
-    //comportement
 
+export default function Footer() {
     //affichage (render)
     return (
         <footer className='footer'>
@@ -26,5 +15,3 @@ function Footer() {
         </footer>
     )
 }
-
-export default Footer
