@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.kasa-banner {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,35 +7,65 @@
   padding-top: 3rem;
 }
 
-.kasa-banner ul {
+.header-nav {
   display: flex;
   gap: 3.5rem;
-}
-
-.kasa-banner li {
-  list-style: none;
-  color: #FF6060;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
 }
 
+.header-link {
+  color: #FF6060;
+}
+
 /****** Media queries ***********/
 @media screen and (max-width: 768px) {
-  .kasa-banner {
-    gap: 0;
-    padding-top: 1.25rem;
+  .header {
+    gap: 60px;
+    padding: 1.25rem;
   }
-  .kasa-banner img {
+  .header img {
     width: 9rem;
     height: 3rem;
   }
-  .kasa-banner ul {
+  .header-nav {
     display: flex;
     gap: 1.5rem;
+    font-size: 0.75rem;
   }
-  .kasa-banner li {
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.7rem;
+  padding: 4rem 29rem 2rem 29rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer img {
+  width: 7.5rem;
+  height: 2.5rem;
+}
+
+.footer p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+}
+
+/****** Media queries ***********/
+@media screen and (max-width: 768px) {
+  .footer {
+    gap: 0;
+    padding: 4rem 7rem 3rem 7rem;
+  }
+  .footer p {
     font-size: 0.75rem;
   }
 }
