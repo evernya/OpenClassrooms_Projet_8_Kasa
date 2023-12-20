@@ -1,0 +1,43 @@
+.kasa-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45rem;
+    padding-top: 3rem; 
+}
+
+.kasa-banner ul{
+    display: flex;
+    gap: 3.5rem; 
+}
+
+.kasa-banner li{
+    list-style: none;
+    color : $colorPrimary;
+    font-family: $fontPrimary;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500; 
+}
+
+/****** Media queries ***********/
+@media screen and (max-width: 768px){
+    .kasa-banner{
+        gap: 0;
+        padding-top: 1.25rem; 
+    }
+
+    .kasa-banner img{
+        width: 9rem;
+        height: 3rem; 
+    }
+
+    .kasa-banner ul{
+        display: flex;
+        gap: 1.5rem; 
+    }
+
+    .kasa-banner li{
+        font-size: 0.75rem; 
+    }
+}
