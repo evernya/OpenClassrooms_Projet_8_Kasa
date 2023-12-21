@@ -4,23 +4,26 @@
     justify-content: center;
     align-items: center;
     gap: 45rem;
-    padding-top: 3rem; 
+    padding: 3rem 0; 
 }
 
 //Nav
 .header-nav{
     display: flex;
     gap: 3.5rem; 
-    font-family: $fontPrimary;
+    @include font;
     font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 500; 
 }
 
-.header-link{
+.header-link-active{
     color : $colorPrimary;
+    text-decoration: underline;
 }
 
+.header-link-inactive{
+    color : $colorPrimary;
+    text-decoration: none;
+}
 
 /****** Media queries ***********/
 @media screen and (max-width: 768px){
