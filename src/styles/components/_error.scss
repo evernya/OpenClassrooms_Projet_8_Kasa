@@ -1,0 +1,30 @@
+//Page erreur
+.error {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 4.5rem; 
+    padding: 0 1.25rem 6rem 1.25rem
+}
+
+.error h1 {
+    color: $colorPrimary;
+    @include font;
+    font-size: 18rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+}
+
+.error p {
+    color: $colorPrimary;
+    @include font;
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+.error-return-home {
+    color: $colorPrimary;
+    @include font;
+    font-size: 1.125rem;
+}
