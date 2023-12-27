@@ -23,6 +23,8 @@
 /****** Media queries ***********/
 @media screen and (max-width: 768px) {
     .footer {
+        position: absolute;
+        bottom: 0;
         gap: 0;
         padding: 4rem 7rem 3rem 7rem;
     }

@@ -1,0 +1,56 @@
+//Bannière
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 3rem 3rem 3rem;
+}
+
+.banner img {
+    width: 77.5rem;
+    height: 14rem; 
+    border-radius: 1.5rem;
+    object-fit: cover;
+}
+
+.banner p {
+    position: absolute;
+    @include font;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.banner-darken{
+    position: absolute;
+    width: 77.5rem;
+    height: 14rem;
+    border-radius: 1.5rem;
+    opacity: 0.3;
+    background: #000;
+    mix-blend-mode: darken; 
+}
+
+/****** Media queries ***********/
+@media screen and (max-width: 768px){
+    .banner {
+        padding: 0 1.25rem 1.25rem 1.25rem;
+    }
+
+    .banner img {
+        width: 21rem;
+        height: 7rem; 
+        border-radius: 0.625rem; 
+    }
+
+    .banner p {
+        font-size: 1.5rem;
+        padding: 0 100px 0 25px;
+    }
+
+    .banner-darken{
+        width: 20.800rem;
+        height: 7rem; 
+        border-radius: 0.625rem;
+    }
+}
