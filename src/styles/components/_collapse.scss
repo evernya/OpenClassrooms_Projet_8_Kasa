@@ -1,0 +1,68 @@
+//Dropdown / Collapse
+.collapse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; 
+    padding: 0 3rem 3rem 3rem;
+}
+
+.collapse-all{
+    background-color: #F6F6F6;
+    border-radius: 0.5rem; 
+    width: 64rem;
+}
+
+.collapse-title-arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $colorPrimary;
+    border-radius: 0.5rem; 
+    padding: 0.5rem 1rem; 
+}
+
+.arrow-up{
+    transform: rotate(180deg);
+}
+
+.collapse-container{
+    padding: 0 1rem;
+}
+
+.collapse h3{
+    color: #FFF;
+    @include font;
+    font-size: 1.5rem; 
+    margin: 5px;
+}
+
+.collapse p{
+    color: $colorPrimary;
+    @include font;
+    font-size: 1.125rem; 
+}
+
+/****** Media queries ***********/
+@media screen and (max-width: 768px){
+    .collapse{
+        gap: 1rem; 
+    }
+
+    .collapse-all{
+        width: 20.8rem;
+    }
+
+    .arrow{
+        height: 1.5rem;
+    }
+
+    .collapse h3{
+        font-size: 0.8125rem; 
+    }
+    
+    .collapse p{
+        font-weight: 400; 
+        font-size: 0.75rem; 
+    }
+}
