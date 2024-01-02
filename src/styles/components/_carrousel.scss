@@ -1,0 +1,59 @@
+//Carrousel
+.carrousel{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.slide-pictures{
+    width: 77.5rem;
+    height: 26rem; 
+    border-radius: 1.5rem; 
+    object-fit: cover;
+}
+
+.slide-arrow {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60rem;
+    width: 77.5rem;
+    height: 26rem;
+}
+
+.slide-arrow-left{
+    transform: rotate(180deg);
+}
+
+.counter{
+    position: absolute;
+    bottom: 0;
+    @include font;
+    font-size: 1.125rem; 
+    color: #fff;
+}
+
+/****** Media queries ***********/
+@media screen and (max-width: 768px){
+    .slide-pictures{
+        width: 21rem;
+        height: 16rem; 
+        border-radius: 0.625rem; 
+    }
+
+    .slide-arrow {
+        gap: 15rem;
+        width: 21rem;
+        height: 16rem; 
+    }
+
+    .slide-arrow img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .counter{
+        display: none;
+    }
+}
