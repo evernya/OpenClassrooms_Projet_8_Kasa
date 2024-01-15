@@ -3,10 +3,6 @@ import '../styles/style.css';
 
 
 export default function Card({ cover, title }) {
-  //state (état, données)
-
-  //comportement
-
   //affichage (render)
   return (
       <figure className="card">

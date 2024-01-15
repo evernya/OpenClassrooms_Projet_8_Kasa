@@ -10,10 +10,6 @@ import '../styles/style.css';
 
 
 export default function Gallery() {
-    //state (état, données)
-
-    //comportement
-
     //affichage (render)
     return (
         <div className="gallery">
@@ -25,7 +21,7 @@ export default function Gallery() {
                         </Link>
                     </figure>
                 )
-            }
+                }
             )}
         </div >
     )

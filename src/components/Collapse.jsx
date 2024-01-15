@@ -1,12 +1,6 @@
 //IMPORT
 import { useState } from 'react'
 
-//PAGES
-
-//LAYOUTS
-
-//COMPONENTS
-
 //ASSETS
 import arrow from '../assets/Arrow.svg'
 
@@ -25,16 +19,15 @@ export default function Collapse( {title, container}) {
 
     //affichage (render)
     return (
-            <div className='collapse-all'>
-                <div onClick={ handleOpen } className='collapse-title-arrow'>
-                    <h3>{title}</h3>
+            <div onClick={ handleOpen } className='collapse-all'>
+                <div className='collapse-title-arrow'>
+                    <h3 className='collapse-title'>{title}</h3>
                     <img className={collapseOpen ? 'arrow arrow-down' : 'arrow arrow-up'} src={arrow} alt="open/close collapse"/>
                 </div>
 
                 <div className='collapse-container'>
-                {collapseOpen && <p>{container}</p>}
+                    {collapseOpen && <p className='collapse-p'>{container}</p>}
                 </div>
-
             </div>
         )
 }
