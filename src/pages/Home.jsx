@@ -1,28 +1,27 @@
-//IMPORT
-
-//PAGES
-
 //LAYOUTS
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../layout/Header'
+import Footer from '../layout/Footer'
 
 //COMPONENTS
+import Banner from '../components/Banner'
+import Gallery from '../components/Gallery'
 
 //ASSETS
+import bannerHome from '../assets/Banner_Home.png'
 
 //CSS
 import '../styles/style.css';
 
+
+
 function Home() {
-    //state (état, données)
-  
-    //comportement
-  
     //affichage (render)
     return <>
-    <Header />
-    <Footer />
+        <Header />
+        <Banner image={bannerHome} texte="Chez vous, partout et ailleurs" />
+        <Gallery />
+        <Footer />
     </>
-  }
+}
 
-  export default Home
+export default Home
