@@ -26,12 +26,10 @@ function App() {
       {
         path: '/',
         element: <Home />,
-        children: [
-          {
-            path: '/logement/:id',
-            element: <Logement />
-          },
-        ]
+      },
+      {
+        path: '/logement/:logementId',
+        element: <Logement />
       },
       {
         path: '/apropos',
@@ -49,3 +47,4 @@ function App() {
 }
 
 export default App;
+

@@ -2,10 +2,30 @@
 @import "utils/variable";
 @import "utils/mixin";
 
+@import "components/banner";
+@import "components/carrousel";
+@import "components/collapse";
+@import "components/error";
+@import "components/gallery-card";
+
 @import "layout/header";
 @import "layout/footer";
+
+@import "page/logement";
 
 body{
     margin : 0;
 }
 
+figure{
+    margin: 0;
+}
+
+//About
+.collapse-about-size{
+    width: 64rem;
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+      }
+}
