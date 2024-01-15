@@ -28,8 +28,8 @@ export default function Carrousel({ slide }) {
       <img className='slide-pictures' src={slide[index]} alt="logement" />
 
       <div className='slide-arrow'>
-        <img className='slide-arrow-left' src={sideArrow} alt="flèche gauche" onClick={handlePrevSlide} />
-        <img src={sideArrow} alt="flèche droite" onClick={handleNextSlide} />
+      {slide.length > 1 && <img className='slide-arrow-left' src={sideArrow} alt="flèche gauche" onClick={handlePrevSlide} />}
+      {slide.length > 1 &&  <img src={sideArrow} alt="flèche droite" onClick={handleNextSlide} />}
       </div>
 
       {slide.length > 1 && <p className='counter'>{index + 1} / {slide.length}</p>}
