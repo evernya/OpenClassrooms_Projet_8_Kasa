@@ -7,7 +7,7 @@ import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 
 //ASSETS
-import bannerHome from "../assets/Banner_About.png";
+import bannerAbout from "../assets/Banner_About.png";
 
 //CSS
 import "../styles/style.css";
@@ -19,7 +19,7 @@ function About() {
   return (
     <>
       <Header />
-      <Banner image={bannerHome} />
+      <Banner image={bannerAbout} />
 
       <div className="collapse">
         <div className="collapse-about-size">

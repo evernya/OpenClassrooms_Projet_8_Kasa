@@ -11,8 +11,6 @@ export default function Rating( {rating} ) {
     //state (état, données)
     const nombreStars =[1, 2, 3, 4, 5];
 
-    //comportement
-
     //affichage (render)
     return (
         <div className='rating'>

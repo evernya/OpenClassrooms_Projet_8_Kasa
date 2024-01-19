@@ -21,8 +21,7 @@ function Logement() {
   //state (état, données)
   const { logementId } = useParams();
   const navigate = useNavigate();
-
-  //comportement
+  
   const [logement, setLogement] = useState(
     {
       pictures: [],
@@ -36,6 +35,7 @@ function Logement() {
     }
   );
 
+  //comportement
   useEffect(() => {
     const ficheLogement = dataLogement.find((logement) => logement.id === logementId);
 
